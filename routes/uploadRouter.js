@@ -17,10 +17,10 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-router.post('/', upload.single('file'), handleUploadFile);
+router.post('/', upload.array('files', 99), handleUploadFile);
 
 async function handleUploadFile(req, res) {
-  if(req.file) {
+  if(req.files) {
     res.redirect('/');
   } else {
     res.status(400).send('No se ha recibido un archivo.')

@@ -6,17 +6,15 @@
   </head >
   <body >
     <hr >
-    <p >Selecciona un archivo para subir</p >
+    <p >Selecciona uno o mas archivos para subir</p >
     <hr >
     <form action="/upload/" method="post"
           enctype="multipart/form-data"
     >
-      <input
-              type="file"
-
-              class="custom-file-input"
-              id="file"
-              name="file"
+      <input type="file"
+             class="custom-file-input"
+             name="files"
+             multiple
       />
       <button type="submit" >Subir</button >
     </form >
