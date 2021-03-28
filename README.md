@@ -1,5 +1,5 @@
 # file-uploader
-Pequeño servicio el cual su único objetivo es permitir subir y guardar archivos mediante HTTP.
+Pequeño servicio el cual su único objetivo es permitir subir y guardar archivos mediante HTTP usando `nodejs`
 
 Literalmente solo eso.
 
