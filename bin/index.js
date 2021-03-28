@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 })
 
 // En caso de error
-app.use((err, req, res) => {
+app.use((err, req, res, next) => {
   console.error(err)
   res.sendStatus(500);
 });
